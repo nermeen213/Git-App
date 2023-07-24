@@ -1,0 +1,75 @@
+
+
+
+
+main {
+    background-color: #F7ECDE;
+    min-height: 100vh;
+}
+
+
+.main {
+    border-top: 2px dotted #000;
+    border-bottom: 2px dotted #000;
+    position: relative;
+}
+
+h1 {
+    padding: 50px 0;
+    width: fit-content;
+    margin: auto;
+    isolation: isolate;
+    color: #352e28;
+    font-size: 50px;
+    position: relative;
+    z-index: 0;
+    font-family: 'Pacifico', cursive;
+  
+}
+span {
+    margin-right: 10px;
+}
+
+h1::before {
+
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    left: 0;
+    bottom: 50px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+    
+}
+
+
+h1:hover::before {
+   
+    height: 25%;
+}
+
+
+
+
+
+
+h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49fd);
+   
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip : text 
+}
+
+
+main .color {
+    color: #ffffff;
+    background-color: #8A9E23 !important;
+}
+main .color:hover {
+    color: #FFFFFF;
+}
