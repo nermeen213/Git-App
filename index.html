@@ -33,11 +33,11 @@
                 </h2>
                 <div class="mb-3">
                     <label for="siteName" class="pb-2"><span><i class="fa-solid fa-book"></i></span>Site Name</label>
-                    <input  type="text" id="siteName" class="form-control" placeholder="Bookmark Name">
+                    <input oninput="regexName()" type="text" id="siteName" class="form-control " placeholder="Bookmark Name">
                 </div>
                 <div class="mb-3">
                     <label for="siteURL" class="pb-2"><span><i class="fa-solid fa-link"></i></span>Site URL</label>
-                    <input type="url" id="siteURL" class="form-control" placeholder="Website URL"  >
+                    <input type="url" oninput="regexURL()" id="siteURL" class="form-control" placeholder="Website URL"  >
                 </div>
                 <div class="w-100 d-flex justify-content-center">
                     <button class="btn btn-danger px-5 my-5" onclick="addURL()">submit</button>

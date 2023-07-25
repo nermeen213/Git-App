@@ -77,6 +77,54 @@ function deleteURL(elementnumber){
 
 
 
+function regexName() {
+    var regexName =/^[a-zA-Z]{3,10}/
+    var text = siteNameInput.value;
+    
+    if( regexName.test( text) == true ) {
+        siteNameInput.classList.add("is-valid")
+        siteNameInput.classList.remove("is-invalid")
+
+
+
+    }
+    else {
+        siteNameInput.classList.add("is-invalid")
+        siteNameInput.classList.remove("is-valid")
+
+
+
+    }
+}
+function regexURL() {
+    var regexURL = /^[httpsHTTPS]/
+    var title = siteURLInput.value;
+    
+    if( regexURL.test( title ) == true ) {
+        siteURLInput.classList.add("is-valid")
+        siteURLInput.classList.remove("is-invalid")
+
+
+
+    }
+    else {
+        siteURLInput.classList.add("is-invalid")
+        siteURLInput.classList.remove("is-valid")
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

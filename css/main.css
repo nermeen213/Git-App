@@ -5,6 +5,7 @@
 main {
     background-color: #F7ECDE;
     min-height: 100vh;
+    padding: 0 20px;
 }
 
 
@@ -12,6 +13,7 @@ main {
     border-top: 2px dotted #000;
     border-bottom: 2px dotted #000;
     position: relative;
+  
 }
 
 h1 {
@@ -59,10 +61,10 @@ h1:hover::before {
 h2 {
     font-family: "Righteous", cursive;
     font-size: 25px;
-    background-image: linear-gradient(to right, #3ca55c, #b5ac49fd);
-   
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip : text 
+    
+	background: linear-gradient(to right, #3ca55c 15%, #b5ac49fd 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 
