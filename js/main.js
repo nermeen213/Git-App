@@ -97,7 +97,7 @@ function regexName() {
     }
 }
 function regexURL() {
-    var regexURL = /^[httpsHTTPS]/
+    var regexURL = /^(https:\/\/)?(www\.)?[A-Za-z0-9_\.]{1,}\.[a-z]{3}$/
     var title = siteURLInput.value;
     
     if( regexURL.test( title ) == true ) {
